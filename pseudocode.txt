@@ -1,0 +1,23 @@
+Pick random word
+
+While word is not guessed {
+  Show player current progress
+  Await player guess
+}
+
+If player guess single letter AND letter new guess {
+  update guesses left (-1)
+  see if guess is in word {
+	if guess = true, add guess to "win" and show letter in mystery word
+	ELSE
+	if guess = false, add guess to "losses"
+}
+
+event when guesses reduces to 0, game is over and player loses. page will restart game
+
+event when player guesses every letter, congratulations text popover? page will restart game. 
+
+
+If player wants hint to answer {
+ click hint element to open box with hint text
+}
