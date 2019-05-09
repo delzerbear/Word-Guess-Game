@@ -1,22 +1,32 @@
 // Use key events to listen for the letters that your players will type.
 //Display the following on the page:
-displayText
+
 //Press any key to get started!
+var directionsText = document.getElementById("directions-text");
 //Wins: (# of times user guessed the word correctly).
 
 //Inserted array for all letter choices possible??
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 //Array for different "mystery" words!
 var toonList = ["Transformers", "GI Joe", "DuckTales", "ThunderCats", "Voltron", "She-Ra", "He-Man"];
-    
+
 
 //If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
 //As the user guesses the correct letters, reveal them: m a d o _  _ a.
 
-//Computer will select random mystery word from array toonList.
+//Computer will return index [0-6] of random mystery word from array toonList.
+// Setting variable for randomToon
+let randomToon =  Math.floor(Math.random()* toonList.length); 
+
 function findRandomWord () {
-var randomToon =  Math.floor(Math.random()* toonList.length);  
-toonList [randomToon]
+    return randomToon =  Math.floor(Math.random()* toonList.length);  
+}
+
+//When randomToon selected, page should display spaced underscores pertaining to number of letters in word
+//
+// toonList [randomToon]
+if (randomToon === [0]) {
+document.getElementById("mystery-word").innerHTML = filler * 7;
 }
 
 
@@ -26,7 +36,10 @@ toonList [randomToon]
     var guessesleft = 13;
     var letterguesses = 0;
     var filler = ["_"];
+
+    
 //After the user wins/loses the game should automatically choose another word and make the user play it.
+
 
 //Console log to test the javascript
 console.log(alphabet)
