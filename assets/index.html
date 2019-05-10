@@ -3,6 +3,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Word Guess: Animated in the 80s!</title>
   </head>
 
@@ -10,20 +11,20 @@
   <script src=".\javascript\game.js"></script>
 
   <!-- Build the appearance of the page -->
-  <body>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="container for-about">
+      <h1 class="display-4">Word Guess: Animated in the 80s!</h1>
+        <hr></hr>
+      <p id="directions-text"><h2>Press any key to get started!</h2></p>
 
-    <h1>Word Guess: Animated in the 80s!</h1>
+      <!-- HTML elemment for mystery word to be displayed -->
+      <p id="mystery-word"></p>
+      <p id="wins-text"></p>
+      <p id="losses-text"></p>
+      <p id="guesses-left"></p>
+    </div>
 
-  <div>
-    <p id="directions-text">Press any key to get started!</p>
-
-    <!-- HTML elemment for mystery word to be displayed -->
-    <p id="mystery-word"></p>
-    <p id="wins-text"></p>
-    <p id="losses-text"></p>
-    <p id="guesses-left"></p>
-  </div>
-
-  </body>
+</div>
 
 </html>
