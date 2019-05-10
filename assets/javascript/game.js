@@ -27,11 +27,6 @@ for (var i = 0; i < randomToon.length; i++) {
 
 var remainingLetters = randomToon.length;
 
-//document.onkeyup = function(event) {
-    // Determines which key was pressed.
-    //var userGuess = event.key;}
-
-
 //If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
 //As the user guesses the correct letters, reveal them: m a d o _  _ a.
 //Found exmaple of code similar to what I want, but has uses prompts instead of displaying text

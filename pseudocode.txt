@@ -1,4 +1,7 @@
-Pick random word
+Player press any key to start game
+
+Code pick random word
+Displays unguessed word "_"
 
 While word is not guessed {
   Show player current progress
