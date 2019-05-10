@@ -1,5 +1,4 @@
-Player press any key to start game
-
+Press anykey to start
 Code pick random word
 Displays unguessed word "_"
 
@@ -8,7 +7,7 @@ While word is not guessed {
   Await player guess
 }
 
-If player guess single letter AND letter new guess {
+iterate this loop: If player guess single letter AND letter new guess {
   update guesses left (-1)
   see if guess is in word {
 	if guess = true, add guess to "win" and show letter in mystery word
