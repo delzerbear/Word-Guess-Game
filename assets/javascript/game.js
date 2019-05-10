@@ -18,6 +18,10 @@ function findRandomWord () {
     return randomToon =  Math.floor(Math.random()* toonList.length);  
 }
 
+object.onkeyup = function(){
+//user guesses a letter 
+};
+
 //Create answer array to fill w/ underscores for blank word
 //When randomToon selected, page should display spaced underscores pertaining to number of letters in word
 var answerArray = [];
@@ -29,21 +33,7 @@ var remainingLetters = randomToon.length;
 
 //If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
 //As the user guesses the correct letters, reveal them: m a d o _  _ a.
-//Found exmaple of code similar to what I want, but has uses prompts instead of displaying text
-while (remainingLetters > 0) {
- alert(answerArray.join(" "));
- var guess = prompt("Guess a letter to start playing, or click Cancel to stop playing.");
- if (guess === null) {
-    break;
-} else if (guess.length !== 1) {
-    alert("Please enter a single letter.");
-} else {
-    for (var j = 0; j < wordLength; j++) {
-    if (word[j] === guess);
-    remainingLetters--;
-        }
-    }
-}
+//Found exmaple of code similar to what I want, but has uses prompts instead of displaying text}
 
 //Number of Guesses Remaining: (# of guesses remaining for the user).
 //Letters Already Guessed: (Letters the user has guessed, displayed like L Z Y H).    
