@@ -1,12 +1,12 @@
 // Use key events to listen for the letters that your players will type.
 //Display the following on the page:
-var directionsText = Document.getElementById("directions-text");
+var directionsText = document.getElementById("directions-text");
 //Press any key to get started!
-var mysteryWord = Document.getElementById("mystery-word");
+var mysteryWord = document.getElementById("mystery-word");
 //Wins: (# of times user guessed the word correctly).
-var winsText = Document.getElementById("wins-text");
-var lossesText = Document.getElementById("losses-text");
-var guessesLeft = Document.getElementById("guesses-left");
+var winsText = document.getElementById("wins-text");
+var lossesText = document.getElementById("losses-text");s
+var guessesLeft = document.getElementById("guesses-left");
 
 //Array for different "mystery" words!
 var toonList = ["Transformers", "GI Joe", "DuckTales", "ThunderCats", "Voltron", "She-Ra", "He-Man"];
@@ -18,8 +18,9 @@ function findRandomWord () {
     return randomToon =  Math.floor(Math.random()* toonList.length);  
 }
 
-object.onkeyup = function(){
-//user guesses a letter 
+object.onkeyup = function(event) {
+// if userguess = part of randomtoon string
+// else answer is wins?
 };
 
 //Create answer array to fill w/ underscores for blank word
